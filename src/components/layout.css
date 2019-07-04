@@ -620,3 +620,19 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.footer{
+  background-color: rgb(21, 71, 21);
+
+}
+
+.ulfooter{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.link{
+  color: #ffffff;
+  text-decoration: none;
+}

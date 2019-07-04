@@ -42,19 +42,16 @@ class Footer extends Component {
     
     render() {
         return (
-            <div>
             <div className="footer">
-                <ul>
+                <ul className="ulfooter">
                     {this.state.footerLink.map((flink)=>{
                         return (
-                            <li key={flink.id}> 
-                            <Link to={flink.url}>{flink.text}</Link>
+                            <li key={flink.id} className="lifooter"> 
+                            <Link to={flink.url} className="link">{flink.text}</Link>
                             </li>
                         )
                     })}
                 </ul>
-            </div>
-        
             </div>
         );
     }
