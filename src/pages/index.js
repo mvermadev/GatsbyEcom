@@ -2,13 +2,13 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Main from "../components/reuseComp/Main";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Beta E-commerce</h1>
+    <Main></Main>
   </Layout>
 )
 

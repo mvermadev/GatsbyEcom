@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'gatsby'
+// import 'react-bootstrap';
+
 
 class Footer extends Component {
     constructor(props) {
@@ -25,7 +27,7 @@ class Footer extends Component {
                     id: 4,
                     text: 'CAREER',
                     url: '/career'
-                },
+                }, 
                 {
                     id: 5,
                     text: 'LOGIN',
@@ -34,7 +36,7 @@ class Footer extends Component {
                 {
                     id: 6,
                     text: 'SIGNUP',
-                    url: '/signup'
+                    url: '/signup' 
                 }
             ]
         }
@@ -42,16 +44,19 @@ class Footer extends Component {
     
     render() {
         return (
-            <div className="footer">
-                <ul className="ulfooter">
+            <div className="bg-theme text-white text-center">
+            <div className="navbar navbar-expand-sm text-white">
+                <ul className="navbar-nav ml-auto mr-auto">
                     {this.state.footerLink.map((flink)=>{
                         return (
-                            <li key={flink.id} className="lifooter"> 
-                            <Link to={flink.url} className="link">{flink.text}</Link>
+                            <li key={flink.id} className="nav-item font-weight-bold"> 
+                            <Link to={flink.url} className="nav-link text-white">{flink.text}</Link>
                             </li>
                         )
                     })}
-                </ul>
+                </ul> 
+            </div>
+                <h6 className="mb-2">This is Footer copyright &copy; 2019</h6>
             </div>
         );
     }

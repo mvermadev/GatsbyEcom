@@ -9,14 +9,16 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
 import "./layout.css"
 import Footer from "./reuseComp/Footer";
-
+import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+import Heading from "./reuseComp/Heading";
+import './bootstrap.min.css';
 const Layout = ({ children }) => (
-  <div>
+  <div className="bg-color">
+    <Heading/>
     {children}
-    <Footer/>
+    <Footer/> 
   </div>
 )
 
